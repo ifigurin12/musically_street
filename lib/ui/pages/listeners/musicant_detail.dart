@@ -1,9 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:musically_street/models/comment.dart';
 import 'package:musically_street/models/listener.dart';
 import 'package:musically_street/models/musicant.dart';
 
-class MusicantProfilePage extends StatelessWidget {
+class MusicantDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,16 +13,16 @@ class MusicantProfilePage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: ProfileWidget(),
+      home: MusicantDetailPage(),
     );
   }
 }
 
-class ProfileWidget extends StatefulWidget {
-  State<ProfileWidget> createState() => _ProfileWidgetState();
+class MusicantDetailPage extends StatefulWidget {
+  State<MusicantDetailPage> createState() => _MusicantDetailPageState();
 }
 
-class _ProfileWidgetState extends State<ProfileWidget> {
+class _MusicantDetailPageState extends State<MusicantDetailPage> {
   @override
   Widget build(BuildContext context) {
     final _deviceSize = MediaQuery.of(context).size;
@@ -40,30 +41,17 @@ class _ProfileWidgetState extends State<ProfileWidget> {
               horizontal: _deviceSize.height * 0.02,
               vertical: _deviceSize.width * 0.04),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    '${music.groupName}',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
-                  ),
-                  TextButton(onPressed: () {}, child: Text('Редактировать')),
-                ],
-              ),
-              TextField(
-                maxLines: 3,
-                readOnly: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: '${music.groupDescription}',
-                ),
+              Text(
+                '${music.groupName}',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
               ),
               Container(
                 padding: EdgeInsets.only(
-                    top: _deviceSize.height * 0.03,
-                    bottom: _deviceSize.height * 0.03),
-                height: _deviceSize.height * 0.25,
+                    top: _deviceSize.height * 0.01,
+                    bottom: _deviceSize.height * 0.01),
+                height: _deviceSize.height * 0.20,
                 child: LayoutBuilder(
                   builder: (BuildContext context, BoxConstraints constraints) {
                     return ListView.builder(
@@ -75,16 +63,22 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   },
                 ),
               ),
-              Row(
-                children: [
-                  const Text(
-                    'Добавить фото',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-                  ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.photo_camera_outlined))
-                ],
+              Padding(
+                padding: EdgeInsets.only(bottom: _deviceSize.height * 0.01),
+                child: Text(
+                  '${music.groupDescription}',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              TextField(
+                maxLines: 1,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Введите комментарий',
+                ),
               ),
               Container(
+                padding: EdgeInsets.only(top: _deviceSize.height * 0.01),
                 height: _deviceSize.height * 0.4,
                 width: _deviceSize.width,
                 child: ListView.builder(

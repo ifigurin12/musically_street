@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "420427130076",
+    "project_id": "musically-street",
+    "storage_bucket": "musically-street.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420427130076:android:a69f34165ce598a20f0019",
+        "android_client_info": {
+          "package_name": "com.example.musically_street"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420427130076-9g0kufop2rjlk6lhe7rndffdu6ga795g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI7nm0EIydj_qx-Qly-wo_TzYSFg_-WEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420427130076-9g0kufop2rjlk6lhe7rndffdu6ga795g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
