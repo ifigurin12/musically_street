@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "420427130076",
-    "project_id": "musically-street",
-    "storage_bucket": "musically-street.appspot.com"
+    "project_number": "242882190009",
+    "project_id": "musically-street-7537a",
+    "storage_bucket": "musically-street-7537a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:420427130076:android:a69f34165ce598a20f0019",
+        "mobilesdk_app_id": "1:242882190009:android:3e9a4d20ea83876288d968",
         "android_client_info": {
           "package_name": "com.example.musically_street"
         }
       },
       "oauth_client": [
         {
-          "client_id": "420427130076-9g0kufop2rjlk6lhe7rndffdu6ga795g.apps.googleusercontent.com",
+          "client_id": "242882190009-g1id333m8pr2qf04efi7obcbtkj7lccf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAI7nm0EIydj_qx-Qly-wo_TzYSFg_-WEc"
+          "current_key": "AIzaSyCdWBSgyfMBc2t3OegDBzSb37MdJAANy3w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "420427130076-9g0kufop2rjlk6lhe7rndffdu6ga795g.apps.googleusercontent.com",
+              "client_id": "242882190009-g1id333m8pr2qf04efi7obcbtkj7lccf.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "242882190009-idntblrruo1rirphdssa6fn9ptaa3p6r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.musicallyStreet"
+              }
             }
           ]
         }
