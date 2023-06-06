@@ -104,6 +104,7 @@ List<Place> places = [
       address: 'Центральная набережная, парк аттракционов'),
 ];
 
+// ignore: must_be_immutable
 class PlaceCard extends StatefulWidget {
   late Place place;
 
