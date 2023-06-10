@@ -12,6 +12,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     final _deviceSize = MediaQuery.of(context).size;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),

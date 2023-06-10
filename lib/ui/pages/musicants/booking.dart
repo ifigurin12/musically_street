@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 List<Place> places = [
   Place(name: 'У моста', address: 'Подвесной мост'),
-  Place(name: 'Переход', address: 'Подземные переход, площадь Пушкина'),
+  Place(name: 'Переход', address: 'Подземный переход, площадь Пушкина'),
   Place(name: 'Плаза', address: 'Пр. Ленина, дом 9'),
   Place(
       name: 'У перевернутого дома',
